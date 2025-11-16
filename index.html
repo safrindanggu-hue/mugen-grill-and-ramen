@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mugen Ramen and Grill</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin:0;
+      background: linear-gradient(to bottom, #fff8f0, #ffe8d2);
+      color:#333;
+    }
+
+    header {
+      display:flex; 
+      justify-content:flex-start; 
+      align-items:center; 
+      padding:20px; 
+      background:#fff; 
+      box-shadow:0 2px 10px rgba(0,0,0,0.06); 
+      position:sticky; 
+      top:0;
+      z-index:10;
+    }
+
+    header img {
+      height:60px;
+      border-radius:8px;
+    }
+
+    header h1 { 
+      margin:0; 
+      font-size:22px; 
+      margin-left:10px;
+    }
+
+    .address {
+      font-size:14px;
+      margin-left:10px;
+      color:#555;
+    }
+
+    .container { 
+      padding:20px; 
+      max-width:1200px; 
+      margin:auto;
+    }
+
+    h2 { margin-top:10px; }
+
+    .product-grid { 
+      display:grid; 
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); 
+      gap:20px; 
+    }
+
+    .card { 
+      background:#ffffffcc; 
+      padding:15px; 
+      border-radius:10px; 
+      box-shadow:0 2px 12px rgba(0,0,0,0.08); 
+      backdrop-filter: blur(3px);
+      display:flex;
+      flex-direction:column;
+    }
+
+    .card img { 
+      width:100%; 
+      border-radius:10px; 
+      height:150px; 
+      object-fit:cover; 
+    }
+
+    .desc {
+      font-size:13px;
+      color:#555;
+      margin-bottom:10px;
+      line-height:1.3em;
+    }
+
+    .order-btn {
+      margin-top:auto;
+      display:block;
+      text-align:center;
+      padding:10px;
+      background:#c40000;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .order-bottom {
+      display:block;
+      width:100%;
+      max-width:400px;
+      margin:40px auto;
+      text-align:center;
+      padding:15px;
+      background:#c40000;
+      color:white;
+      border-radius:10px;
+      font-size:20px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="img/logo ramen.png" alt="Logo">
+    <div>
+      <h1>Mugen Ramen and Grill</h1>
+      <div class="address">Jl. Ande Bole Puncak Waringin, Labuan Bajo</div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <h2>Menu</h2>
+
+  <div class="product-grid">
+
+    <!-- DONBURI -->
+    <div class="card">
+      <img src="img/gyudon.png">
+      <h3>Gyudon</h3>
+      <p>85K</p>
+      <div class="desc">A comforting Japanese rice bowl topped with tender sliced beef simmered in a sweet and savory soy-based sauce. Served with caramelized onions for deep umami flavor.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Gyudon">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/tory katsudon.png">
+      <h3>Tori Katsudon</h3>
+      <p>75K</p>
+      <div class="desc">Crispy chicken katsu simmered with soft onions and eggs over warm steamed rice. A perfect balance of crunchy, savory, and comforting flavors.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Tori%20Katsudon">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/chicken teriyaki don.png">
+      <h3>Chicken Teriyaki Don</h3>
+      <p>75K</p>
+      <div class="desc">Grilled chicken glazed with a rich, sweet teriyaki sauce served on a bowl of fluffy rice. Light, flavorful, and a favorite among visitors.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chicken%20Teriyaki%20Don">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/tendon.png">
+      <h3>Tendon</h3>
+      <p>85K</p>
+      <div class="desc">A hearty selection of crispy tempura served over Japanese rice. The mix of textures and umami sauce creates a satisfying meal.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Tendon">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/tekkadon.png">
+      <h3>Tekkadon</h3>
+      <p>95K</p>
+      <div class="desc">A classic tuna sashimi rice bowl featuring fresh slices of tuna over seasoned rice. Light, refreshing, and perfect for seafood lovers.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Tekkadon">Order Now</a>
+    </div>
+
+    <!-- RAMEN -->
+    <div class="card">
+      <img src="img/torigara katshu ramen.png">
+      <h3>Torigara Katsu Ramen</h3>
+      <p>85K</p>
+      <div class="desc">A warm chicken-based broth paired with crispy chicken katsu. Rich, flavorful, and comforting for any ramen enthusiast.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Torigara%20Katsu%20Ramen">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/tempura shoyu ramen.png">
+      <h3>Tempura Shoyu Ramen</h3>
+      <p>75K</p>
+      <div class="desc">Light soy-flavored ramen topped with crispy shrimp tempura. A combination of delicate broth and crunchy tempura.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Tempura%20Shoyu%20Ramen">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/beef shoyu ramen.png">
+      <h3>Beef Shoyu Ramen</h3>
+      <p>85K</p>
+      <div class="desc">Savory soy broth paired with tender sliced beef. A comforting bowl with deep, satisfying flavors.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Beef%20Shoyu%20Ramen">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/chicken katsu curry ramen.png">
+      <h3>Chicken Katsu Curry Ramen</h3>
+      <p>85K</p>
+      <div class="desc">A fusion delight combining curry seasoning and hearty ramen noodles, topped with crunchy chicken katsu. Bold and aromatic.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chicken%20Katsu%20Curry%20Ramen">Order Now</a>
+    </div>
+
+    <!-- ABURASOBA & TANTANMEN -->
+    <div class="card">
+      <img src="img/chicken aburasoba.png">
+      <h3>Chicken Aburasoba</h3>
+      <p>75K</p>
+      <div class="desc">A brothless noodle dish coated in savory Japanese oil-based sauce, paired with tender chicken. Rich but surprisingly light.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chicken%20Aburasoba">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/beef tantanmen.png">
+      <h3>Beef Tantanmen</h3>
+      <p>85K</p>
+      <div class="desc">Spicy and creamy broth with minced beef, inspired by Sichuan flavors. A perfect balance between heat and richness.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Beef%20Tantanmen">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/chicken tantanmen.png">
+      <h3>Chicken Tantanmen</h3>
+      <p>75K</p>
+      <div class="desc">A mildly spicy noodle bowl featuring ground chicken in a creamy broth. Flavorful and comforting without being too spicy.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chicken%20Tantanmen">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/vegan tantanmen.png">
+      <h3>Vegan Tantanmen</h3>
+      <p>75K</p>
+      <div class="desc">A plant-based version of the popular tan-tan noodles, featuring creamy broth and hearty vegetables. Full flavor without any meat.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Vegan%20Tantanmen">Order Now</a>
+    </div>
+
+    <!-- VEGAN RAMEN -->
+    <div class="card">
+      <img src="img/vegan shoyu ramen.png">
+      <h3>Vegan Shoyu Ramen</h3>
+      <p>70K</p>
+      <div class="desc">A light soy-based ramen made entirely with plant ingredients. Clean, refreshing, and perfect for vegan diners.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Vegan%20Shoyu%20Ramen">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/vegan curry ramen.png">
+      <h3>Vegan Curry Ramen</h3>
+      <p>75K</p>
+      <div class="desc">Comforting curry-flavored ramen with fresh vegetables and chewy noodles. A warm and satisfying vegan option.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Vegan%20Curry%20Ramen">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/vegan aburasoba.png">
+      <h3>Vegan Aburasoba</h3>
+      <p>75K</p>
+      <div class="desc">Brothless vegan noodles tossed in savory sauce with vegetables. Simple, aromatic, and delicious.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Vegan%20Aburasoba">Order Now</a>
+    </div>
+
+    <!-- RICE & YAKISOBA -->
+    <div class="card">
+      <img src="img/chahan.png">
+      <h3>Chahan</h3>
+      <p>45K</p>
+      <div class="desc">Japanese-style fried rice with a light seasoning and aromatic vegetables. A simple yet flavorful classic.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chahan">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/yakisoba.png">
+      <h3>Yakisoba</h3>
+      <p>55K</p>
+      <div class="desc">Stir-fried noodles with sweet-savory sauce and mixed vegetables. A popular street-style dish with bold flavors.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Yakisoba">Order Now</a>
+    </div>
+
+    <!-- TEMPURA -->
+    <div class="card">
+      <img src="img/ebi tempura.png">
+      <h3>Ebi Tempura</h3>
+      <p>55K</p>
+      <div class="desc">Lightly battered shrimp fried to crispy perfection. Served with dipping sauce for the perfect bite.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Ebi%20Tempura">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/tempura moriawase.png">
+      <h3>Tempura Moriawase</h3>
+      <p>60K</p>
+      <div class="desc">A mixed assortment of crispy tempura vegetables and shrimp. Ideal for sharing or enjoying alone.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Tempura%20Moriawase">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/vegan tempura.png">
+      <h3>Vegan Tempura</h3>
+      <p>50K</p>
+      <div class="desc">Crispy battered vegetables fried to golden perfection. A delicious vegan-friendly tempura option.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Vegan%20Tempura">Order Now</a>
+    </div>
+
+    <!-- SIDE DISH -->
+    <div class="card">
+      <img src="img/chicken karrage.png">
+      <h3>Chicken Karaage</h3>
+      <p>45K</p>
+      <div class="desc">Japanese-style fried chicken marinated in soy, ginger, and garlic. Juicy inside, crispy outside.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chicken%20Karaage">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/chicken gyoza.png">
+      <h3>Chicken Gyoza</h3>
+      <p>40K</p>
+      <div class="desc">Pan-fried dumplings filled with seasoned chicken and vegetables. Soft, crispy, and full of flavor.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chicken%20Gyoza">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/agedashi tofu.png">
+      <h3>Agedashi Tofu</h3>
+      <p>35K</p>
+      <div class="desc">Crispy fried tofu served in a warm soy-dashi broth. Soft, delicate, and deeply comforting.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Agedashi%20Tofu">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/tamagoyaki.png">
+      <h3>Tamagoyaki</h3>
+      <p>35K</p>
+      <div class="desc">A fluffy Japanese rolled omelette with a slightly sweet flavor. Light and perfect as a side dish.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Tamagoyaki">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/edamame.png">
+      <h3>Edamame</h3>
+      <p>20K</p>
+      <div class="desc">Steamed young soybeans lightly salted. A healthy and refreshing appetizer.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Edamame">Order Now</a>
+    </div>
+
+    <!-- SALAD -->
+    <div class="card">
+      <img src="img/wakame salad.png">
+      <h3>Wakame Salad</h3>
+      <p>25K</p>
+      <div class="desc">A refreshing seaweed salad with sesame dressing. Light, crunchy, and full of minerals.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Wakame%20Salad">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/kyuri salad.png">
+      <h3>Kyuri Salad</h3>
+      <p>25K</p>
+      <div class="desc">Cucumber salad with tangy Japanese-style dressing. Cool, crisp, and refreshing.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Kyuri%20Salad">Order Now</a>
+    </div>
+
+    <!-- SPECIAL DISH -->
+    <div class="card">
+      <img src="img/tuna tataki.png">
+      <h3>Tuna Tataki</h3>
+      <p>75K</p>
+      <div class="desc">Lightly seared tuna slices served with citrus soy dressing. Fresh, aromatic, and full of character.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Tuna%20Tataki">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/us short plate.png">
+      <h3>US Short Plate</h3>
+      <p>120K</p>
+      <div class="desc">Premium beef slices with rich marbling for a tender, juicy grill experience. Perfect for meat lovers.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20US%20Short%20Plate">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/chicken breast.png">
+      <h3>Chicken Breast</h3>
+      <p>55K</p>
+      <div class="desc">Lean grilled chicken breast seasoned with Japanese spices. Simple, healthy, and flavorful.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Chicken%20Breast">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/prawn.png">
+      <h3>Prawn</h3>
+      <p>55K</p>
+      <div class="desc">Fresh prawns prepared the Japanese way for a sweet, tender bite. A great seafood addition.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Prawn">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/squid.png">
+      <h3>Squid</h3>
+      <p>55K</p>
+      <div class="desc">Grilled squid with a lightly smokey flavor and tender texture. Perfect for seafood fans.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Squid">Order Now</a>
+    </div>
+
+    <div class="card">
+      <img src="img/yasai harumaki.png">
+      <h3>Yasai Harumaki</h3>
+      <p>35K</p>
+      <div class="desc">Vegetable spring rolls with crunchy filling and golden crispy skin. A light and tasty snack.</div>
+      <a class="order-btn" href="https://wa.me/6281236029860?text=Saya%20mau%20Yasai%20Harumaki">Order Now</a>
+    </div>
+
+  </div>
+</div>
+
+<a href="https://wa.me/6281236029860" class="order-bottom">ORDER NOW</a>
+
+</body>
+</html>
